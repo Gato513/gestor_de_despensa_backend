@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/server.js"
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,16 +18,16 @@
     "standard": "^17.1.2"
   },
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcrypt": "5.1.1",
     "cookie-parser": "^1.4.6",
     "cors": "2.8.5",
-    "dotenv": "^16.4.5",
-    "ejs": "^3.1.10",
-    "express": "^4.21.2",
-    "handlebars": "^4.7.8",
-    "jsonwebtoken": "^9.0.2",
+    "dotenv": "16.4.5",
+    "ejs": "3.1.10",
+    "express": "4.21.2",
+    "handlebars": "4.7.8",
+    "jsonwebtoken": "9.0.2",
     "mysql2": "3.11.3",
-    "nodemailer": "^6.9.16",
-    "react-hook-form": "^7.54.1"
+    "nodemailer": "6.9.16",
+    "react-hook-form": "7.54.1"
   }
 }
