@@ -55,11 +55,13 @@ export const sessionLogin = async (req, res) => {
         });
 
         //! Configuración de la cookie con el token:
-        res.cookie('access_token', token, {
-            httpOnly: true,
-            sameSite: 'strict',
-            maxAge: 1000 * 60 * 60, // 1 hora
-        });
+        res.cookie("access_token", token, {
+            httpOnly: true,   // No accesible desde JS
+            maxAge: 3600 * 1000,
+            sameSite: "none", // Permite cross-site
+            secure: true      // Requerido para SameSite=None
+});
+
 
         res.status(200).json({ ok: 'login done' });
 
