@@ -18,7 +18,7 @@ export const serverOfConfig = () => {
     //? Configuración de políticas de CORS
     app.use(
         cors({
-            origin: "http://localhost:3000",
+            origin: "https://gestor-de-despensa-frontend.vercel.app/",
             methods: "GET,POST,DELETE,PUT, PATCH",
             allowedHeaders: ["Content-Type", "Authorization"],
             credentials: true,
